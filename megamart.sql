@@ -944,3 +944,8 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+INSERT INTO `home_categories` (`id`, `sel_categories`, `no_of_products`, `created_at`, `updated_at`) VALUES ('1', 'hh', '3', NULL, NULL);
+INSERT INTO `sales` (`id`, `sale_date`, `status`, `created_at`, `updated_at`) VALUES ('1', '2024-07-28 18:48:50.000000', '1', NULL, NULL);
+INSERT INTO `settings` (`id`, `email`, `phone`, `phone2`, `address`, `map`, `twiter`, `facebook`, `pinterest`, `instagram`, `youtube`, `created_at`, `updated_at`) VALUES ('1', 'admin@gmail.com', '0770445566', '', 'No 54 Colombo , Sri Lanka', '', '', '', '', '', '', NULL, NULL);
