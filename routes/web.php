@@ -92,12 +92,12 @@ Route::get('/',HomeComponent::class);
 //for user
 Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('/user/dashboard',UserDashboardComponent::class)->name('user.dashboard');
-    //Route::get('/user/orders', UserOrdersComponent::class)->name('user.orders');
-    //Route::get('/user/orders/{order_id}', UserOrderDetailsComponent::class)->name('user.orderdetails');
-    //Route::get('/user/review/{order_item_id}', UserReviewComponent::class)->name('user.review');
-    //Route::get('/user/change-password', UserChangePasswordComponent::class)->name('user.changepassword');
-    //Route::get('/user/profile', UserProfileComponent::class)->name('user.profile');
-    //Route::get('/user/profile/edit', UserEditProfileComponent::class)->name('user.editprofile');
+    Route::get('/user/orders', UserOrdersComponent::class)->name('user.orders');
+    Route::get('/user/orders/{order_id}', UserOrderDetailsComponent::class)->name('user.orderdetails');
+    Route::get('/user/review/{order_item_id}', UserReviewComponent::class)->name('user.review');
+    Route::get('/user/change-password', UserChangePasswordComponent::class)->name('user.changepassword');
+    Route::get('/user/profile', UserProfileComponent::class)->name('user.profile');
+    Route::get('/user/profile/edit', UserEditProfileComponent::class)->name('user.editprofile');
 });
 
 //for admin
@@ -108,30 +108,30 @@ Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
    // Route::get('/admin/category/edit', AdminEditCategoryComponent::class)->name('admin.editcategory');
     Route::get('/admin/category/edit/{category_slug}/{scategory_slug?}', AdminEditCategoryComponent::class)->name('admin.editcategory');
 
-    //Route::get('/admin/products', AdminProductComponent::class)->name('admin.products');
-    //Route::get('/admin/products/add', AdminAddProductComponent::class)->name('admin.addproduct');
-    //Route::get('/admin/product/edit/{product_slug}', AdminEditProductComponent::class)->name('admin.editproduct');
+    Route::get('/admin/products', AdminProductComponent::class)->name('admin.products');
+    Route::get('/admin/products/add', AdminAddProductComponent::class)->name('admin.addproduct');
+    Route::get('/admin/product/edit/{product_slug}', AdminEditProductComponent::class)->name('admin.editproduct');
 
-    //Route::get('/admin/slider', AdminHomeSliderComponent::class)->name('admin.homeslider');
-    //Route::get('/admin/slider/add', AdminAddHomeSliderComponent::class)->name('admin.addhomeslider');
-    //Route::get('/admin/slider/edit/{slide_id}', AdminEditHomeSliderComponent::class)->name('admin.edithomeslider');
+    Route::get('/admin/slider', AdminHomeSliderComponent::class)->name('admin.homeslider');
+    Route::get('/admin/slider/add', AdminAddHomeSliderComponent::class)->name('admin.addhomeslider');
+    Route::get('/admin/slider/edit/{slide_id}', AdminEditHomeSliderComponent::class)->name('admin.edithomeslider');
 
-    //Route::get('/admin/home-categories', AdminHomeCategoryComponent::class)->name('admin.homecategories');
-    //Route::get('admin/sale', AdminSaleComponent::class)->name('admin.sale');
+    Route::get('/admin/home-categories', AdminHomeCategoryComponent::class)->name('admin.homecategories');
+    Route::get('admin/sale', AdminSaleComponent::class)->name('admin.sale');
 
-    //Route::get('/admin/coupons', AdminCouponsComponent::class)->name('admin.coupons');
-    //Route::get('/admin/coupon/add', AdminAddCouponsComponent::class)->name('admin.addcoupon');
-    //Route::get('/admin/coupon/edit/{coupon_id}', AdminEditCouponsComponent::class)->name('admin.editcoupon');
+    Route::get('/admin/coupons', AdminCouponsComponent::class)->name('admin.coupons');
+    Route::get('/admin/coupon/add', AdminAddCouponsComponent::class)->name('admin.addcoupon');
+    Route::get('/admin/coupon/edit/{coupon_id}', AdminEditCouponsComponent::class)->name('admin.editcoupon');
 
-    //Route::get('/admin/orders', AdminOrderComponent::class)->name('admin.orders');
-    //Route::get('/admin/orders/{order_id}', AdminOrderDetailsComponent::class)->name('admin.orderdetails');
+    Route::get('/admin/orders', AdminOrderComponent::class)->name('admin.orders');
+    Route::get('/admin/orders/{order_id}', AdminOrderDetailsComponent::class)->name('admin.orderdetails');
     
-    //Route::get('/admin/contact-us', AdminContactComponent::class)->name('admin.contact');
-    //Route::get('/admin/settings', AdminSettingComponent::class)->name('admin.settings');
+    Route::get('/admin/contact-us', AdminContactComponent::class)->name('admin.contact');
+    Route::get('/admin/settings', AdminSettingComponent::class)->name('admin.settings');
     
-    //Route::get('/admin/attributes', AdminAttributesComponent::class)->name('admin.attributes');
-    //Route::get('/admin/attributes/add', AdminAddAttributesComponent::class)->name('admin.add_attributes');
-    //Route::get('/admin/attributes/edit/{attribute_id}', AdminEditAttributesComponent::class)->name('admin.edit_attributes');
+    Route::get('/admin/attributes', AdminAttributesComponent::class)->name('admin.attributes');
+    Route::get('/admin/attributes/add', AdminAddAttributesComponent::class)->name('admin.add_attributes');
+    Route::get('/admin/attributes/edit/{attribute_id}', AdminEditAttributesComponent::class)->name('admin.edit_attributes');
 
     //dont need below
     // Route::get('/admin/user', UserComponent::class)->name('admin.user');

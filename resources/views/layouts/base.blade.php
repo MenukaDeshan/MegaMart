@@ -78,13 +78,13 @@
 															<li class="menu-item">
 																<a title="Categories" href="{{route('admin.categories')}}">Categories</a>
 															</li>
-															{{-- <li class="menu-item">
+															<li class="menu-item">
 																<a title="Attributes" href="{{ route('admin.attributes') }}">Attributes</a>
-															</li> --}}
-															{{-- <li class="menu-item">
+															</li>
+															 <li class="menu-item">
 																<a title="Products" href="{{ route('admin.products') }}">All Products</a>
-															</li> --}}
-															{{-- <li class="menu-item">
+															</li>
+															<li class="menu-item">
 																<a title="Manage Home Slider" href="{{ route('admin.homeslider') }}">Manage Home Slider</a>
 															</li>
 															<li class="menu-item">
@@ -104,7 +104,7 @@
 															</li>
 															<li class="menu-item">
 																<a title="Settings" href="{{ route('admin.settings') }}">Settings</a>
-															</li> --}}
+															</li> 
 															<li class="menu-item">
 																<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 															</li>
@@ -119,7 +119,7 @@
 															({{ Auth::user()->name }})<i class="fa fa-angle-down"
 																aria-hidden="true"></i></a>
 														<ul class="submenu curency">
-															<li class="menu-item">
+															{{-- <li class="menu-item">
 																<a title="Products" href="/admin/products">All Products</a>
 															</li>
 															<li class="menu-item">
@@ -128,7 +128,7 @@
 															<li class="menu-item">
 																<a href="{{ route('logout') }}"
 																	onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-															</li>
+															</li> --}}
 															<form id="logout-form" method="POST"
 																action="{{ route('logout') }}">
 																@csrf
@@ -146,7 +146,7 @@
 															<a title="Dashboard"
 																href="{{ route('user.dashboard') }}">Dashboard</a>
 														</li>
-														{{-- <li class="menu-item">
+														<li class="menu-item">
 															<a title="My Orders" href="{{ route('user.orders') }}">My Orders</a>
 														</li>
 														<li class="menu-item">
@@ -154,7 +154,7 @@
 														</li>
 														<li class="menu-item">
 															<a title="Change Password" href="{{ route('user.changepassword') }}">Change Password</a>
-														</li>  --}}
+														</li> 
 														<li class="menu-item">
 															<a href="{{ route('logout') }}"
 																onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
