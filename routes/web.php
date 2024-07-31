@@ -62,19 +62,19 @@ Route::get('/', function(){
 });
 */
 Route::get('/',HomeComponent::class);
-//Route::get('/shop',\App\Livewire\ShopComponent::class);
-//Route::get('/cart',\App\livewire\CartComponent::class)->name('product.cart');
-//Route::get('/checkout', \App\livewire\CheckoutComponent::class)->name('checkout');
-//Route::get('/product/{slug}',DetailsComponent::class)->name('product.details');
-//Route::get('/product-category/{category_slug}/{scategory_slug?}', CategoryComponent::class)->name('product.category');
-//Route::get('/search', SearchComponent::class)->name('product.search');
-//Route::get('/wishlist', WishlistComponent::class)->name('product.wishlist');
-//Route::get('/thank-you', ThankyouComponent::class)->name('thankyou');
-//Route::get('/contact-us', ContactComponent::class)->name('contact');
-//Route::get('/about-us', AboutusComponent::class);
-//Route::get('/privacy-policy',PrivacyPolicyComponent::class);
-//Route::get('/condition',ConditionComponent::class);
-//Route::get('/return',ReturnPolicyComponent::class);
+Route::get('/shop',\App\Livewire\ShopComponent::class);
+Route::get('/cart',\App\livewire\CartComponent::class)->name('product.cart');
+Route::get('/checkout', \App\livewire\CheckoutComponent::class)->name('checkout');
+Route::get('/product/{slug}',DetailsComponent::class)->name('product.details');
+Route::get('/product-category/{category_slug}/{scategory_slug?}', CategoryComponent::class)->name('product.category');
+Route::get('/search', SearchComponent::class)->name('product.search');
+Route::get('/wishlist', WishlistComponent::class)->name('product.wishlist');
+Route::get('/thank-you', ThankyouComponent::class)->name('thankyou');
+Route::get('/contact-us', ContactComponent::class)->name('contact');
+Route::get('/about-us', AboutusComponent::class);
+Route::get('/privacy-policy',PrivacyPolicyComponent::class);
+Route::get('/condition',ConditionComponent::class);
+Route::get('/return',ReturnPolicyComponent::class);
 
 
 // Route::get('/products', AdminProductComponent::class);
@@ -132,8 +132,6 @@ Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
     Route::get('/admin/attributes', AdminAttributesComponent::class)->name('admin.attributes');
     Route::get('/admin/attributes/add', AdminAddAttributesComponent::class)->name('admin.add_attributes');
     Route::get('/admin/attributes/edit/{attribute_id}', AdminEditAttributesComponent::class)->name('admin.edit_attributes');
-
-    //dont need below
     // Route::get('/admin/user', UserComponent::class)->name('admin.user');
     // Route::get('/admin/user/edit/{user_id}', EditUserComponent::class)->name('admin.editUser');
 });

@@ -81,7 +81,7 @@
 															<li class="menu-item">
 																<a title="Attributes" href="{{ route('admin.attributes') }}">Attributes</a>
 															</li>
-															 <li class="menu-item">
+															<li class="menu-item">
 																<a title="Products" href="{{ route('admin.products') }}">All Products</a>
 															</li>
 															<li class="menu-item">
@@ -104,7 +104,7 @@
 															</li>
 															<li class="menu-item">
 																<a title="Settings" href="{{ route('admin.settings') }}">Settings</a>
-															</li> 
+															</li>
 															<li class="menu-item">
 																<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 															</li>
@@ -119,7 +119,7 @@
 															({{ Auth::user()->name }})<i class="fa fa-angle-down"
 																aria-hidden="true"></i></a>
 														<ul class="submenu curency">
-															{{-- <li class="menu-item">
+															<li class="menu-item">
 																<a title="Products" href="/admin/products">All Products</a>
 															</li>
 															<li class="menu-item">
@@ -128,7 +128,7 @@
 															<li class="menu-item">
 																<a href="{{ route('logout') }}"
 																	onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-															</li> --}}
+															</li>
 															<form id="logout-form" method="POST"
 																action="{{ route('logout') }}">
 																@csrf
@@ -183,12 +183,12 @@
 							<a href="/" class="link-to-home"><img src="{{asset('assets/images/log11o.png')}}" class="logo-big" alt="mercado"></a>
 						</div>
 
-						{{-- @livewire('header-search-component') --}}
+						@livewire('header-search-component')
 
 						<div class="wrap-icon right-section">
-							{{-- @livewire('wishlist-count-component') --}}
+							@livewire('wishlist-count-component')
 
-                            {{-- @livewire('cart-count-component') --}}
+                            @livewire('cart-count-component')
 							
 							<div class="wrap-icon-section show-up-after-1024">
 								<a href="#" class="mobile-navigation">
