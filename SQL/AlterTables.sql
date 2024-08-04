@@ -111,12 +111,6 @@ ALTER TABLE `profiles`
   ADD KEY `profiles_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `reviews`
---
-ALTER TABLE `reviews`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `reviews_order_item_id_foreign` (`order_item_id`);
-
 --
 -- Indexes for table `sales`
 --
@@ -261,11 +255,6 @@ ALTER TABLE `profiles`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `reviews`
---
-ALTER TABLE `reviews`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `sales`
 --
@@ -338,12 +327,6 @@ ALTER TABLE `products`
 --
 ALTER TABLE `profiles`
   ADD CONSTRAINT `profiles_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `reviews`
---
-ALTER TABLE `reviews`
-  ADD CONSTRAINT `reviews_order_item_id_foreign` FOREIGN KEY (`order_item_id`) REFERENCES `order_items` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `shippings`

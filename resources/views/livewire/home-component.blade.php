@@ -7,10 +7,10 @@
 					<div class="item-slide">
 						<img src="{{asset('assets/images/sliders')}}/{{$slide->image}}" alt="" class="img-slide">
 						<div class="slide-info slide-3">
-							<h2 class="f-title"> <b>{{$slide->title}}</b></h2>
+							{{-- <h2 class="f-title"> <b>{{$slide->title}}</b></h2>
 							<span class="f-subtitle">{{$slide->subtitle}}</span>
 							<p class="sale-info">Stating at: <b class="price">LKR {{$slide->price}}</b></p>
-							<a href="{{$slide->link}}" class="btn-link">Shop Now</a>
+							<a href="{{$slide->link}}" class="btn-link">Shop Now</a> --}}
 						</div>
 					</div>
 					@endforeach
@@ -63,7 +63,7 @@
 				<h3 class="title-box">Latest Products</h3>
 				<div class="wrap-top-banner">
 					<a href="#" class="link-banner banner-effect-2">
-						<figure><img src="{{asset('assets/images/ban.jpg')}}" width="1170" height="240" alt=""></figure>
+						<figure><img src="{{asset('assets/images/nbs.png')}}" width="1170" height="240" alt=""></figure>
 					</a>
 				</div>
 				<div class="wrap-products">
@@ -97,7 +97,7 @@
             <h3 class="title-box">Product Categories</h3>
             <div class="wrap-top-banner">
                 <a href="#" class="link-banner banner-effect-2">
-                    <figure><img src="{{ asset('assets/images/products/sd.jpg')}}" width="1170" height="240" alt=""></figure>
+                    <figure><img src="{{ asset('assets/images/nbs2.png')}}" width="1170" height="240" alt=""></figure>
                 </a>
             </div>
             <div class="wrap-products">

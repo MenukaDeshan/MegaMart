@@ -91,10 +91,10 @@
                 <div class="row">
                   <div class="text-left col-xs-8">
                     <span class="icon-stat-label">Total Delivered</span>
-                    <span class="icon-stat-value">LKR {{$totalDelivered}}</span>
+                    <span class="icon-stat-value">{{$totalDelivered}}</span>
                   </div>    
                   <div class="text-center col-xs-4">
-                    <i class="fa fa-dollar icon-stat-visual bg-primary"></i>
+                    <i class="fa fa-gift icon-stat-visual bg-primary"></i>
                   </div>
                 </div>    
                 <div class="icon-stat-footer">

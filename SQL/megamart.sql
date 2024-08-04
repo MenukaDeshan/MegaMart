@@ -193,7 +193,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (18, '2024_04_21_183832_create_shippings_table', 10),
 (19, '2024_04_21_183847_create_transactions_table', 10),
 (20, '2024_04_22_151715_add_delivered_canceled_date_to_orders_table', 11),
-(21, '2024_04_22_200112_create_reviews_table', 12),
 (22, '2024_04_22_200404_add_rstatus_to_order_items_table', 13),
 (23, '2024_04_23_172350_create_contacts_table', 14),
 (24, '2024_04_23_173948_create_settings_table', 15),
@@ -382,15 +381,6 @@ CREATE TABLE `profiles` (
 --
 -- Table structure for table `reviews`
 --
-
-CREATE TABLE `reviews` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `rating` int(11) NOT NULL,
-  `comment` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `order_item_id` bigint(20) UNSIGNED NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `reviews`
